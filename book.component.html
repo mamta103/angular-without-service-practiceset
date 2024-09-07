@@ -1,0 +1,20 @@
+<div class="container mt-4">
+    <h2 class="mb-3">Book List</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let book of books">
+          <td>{{ book.id }}</td>
+          <td>{{ book.name }}</td>
+          <td>\${{ book.price | number:'1.2-2' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
